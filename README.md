@@ -3,7 +3,7 @@
 코틀린에서 RecyclerView 사용하는 예제 연습1
 
 사용된 이미지 저작권 표시
-<a href="https://www.flaticon.com/kr/free-icons/-" title="심벌 마크 아이콘">심벌 마크 아이콘  제작자: Freepik - Flaticon</a>
+\n<a href="https://www.flaticon.com/kr/free-icons/-" title="심벌 마크 아이콘">심벌 마크 아이콘  제작자: Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/kr/free-icons/-" title="인스 타 그램 아이콘">인스 타 그램 아이콘  제작자: Laisa Islam Ani - Flaticon</a>
 <a href="https://www.flaticon.com/kr/free-icons/" title="유튜브 아이콘">유튜브 아이콘  제작자: Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/kr/free-icons/-" title="페이스 북 아이콘">페이스 북 아이콘  제작자: vidyavidz - Flaticon</a>
