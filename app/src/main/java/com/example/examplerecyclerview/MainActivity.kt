@@ -19,12 +19,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun refreshRecyclerView() {
+        // ver 2.0에서는 아래의 과정과 이게 합쳐짐
         // adapter 인스턴스 생성
-        val adapter = Adapter()
+//        val adapter = Adapter()
+
+        // ver 2.0에서는 위의 과정과 이게 합쳐짐
         // 어댑터의 itemList와 ItemList 클래스의 itemList를 일치시키는 코드
-        adapter.itemList = ItemList.itemList
+//        adapter.itemList = ItemList.itemList
+
+        // ver 2.0
+        // adapter 인스턴스 생성과 동시에 어댑터의 itemList를 ItemList 클래스의 itemList로 일치시킴
+        val adapter = Adapter(ItemList.itemList)
+
         // activity_main의 리사이클러뷰 어댑터를 (직접 만든) Adapter로 설정하는 코드
         binding.recyclerView.adapter = adapter
+
         // activity_main의 리사이클러뷰 레이아웃 메니져를 리니어레이아웃으로 설정하는 코드
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
     }

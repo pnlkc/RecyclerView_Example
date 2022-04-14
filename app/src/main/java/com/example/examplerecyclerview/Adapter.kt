@@ -6,15 +6,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.examplerecyclerview.databinding.ItemViewBinding
 
-// Adapter 클래스는 리사이클러뷰의 아답터에 (직접 만든) 뷰홀더를 연결해서 사용
-class Adapter : RecyclerView.Adapter<ViewHolder>() {
+// Adapter 클래스는 리사이클러뷰의 어댑터에 (직접 만든) 뷰홀더를 연결해서 사용
+// ver 2.0에서는 itemList를 기본생성자에서 만듦
+class Adapter(private var itemList: ArrayList<ItemData>) : RecyclerView.Adapter<ViewHolder>() {
 
+    // ver 2.0에서는 itemList를 기본생성자에서 만듦
     // 아직은 빈껍데기인 리사이클러뷰에서 사용할 아이템들의 리스트
-    var itemList = ArrayList<ItemData>()
+//    var itemList = ArrayList<ItemData>()
 
     // 뷰홀더가 생성되는 함수 => 여기서 return 값으로 뷰홀더 객체를 만들어 줌
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-       val binding = ItemViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
