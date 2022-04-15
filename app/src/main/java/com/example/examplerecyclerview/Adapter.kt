@@ -21,6 +21,7 @@ class Adapter(private var itemList: ArrayList<ItemData>) : RecyclerView.Adapter<
     }
 
     // 생성된 뷰홀더에 데이터를 바인딩(연결)해줌 => 재사용될 뷰홀더 레이아웃에 다음에 사용할 데이터를 연결
+    // ViewHolder 클래스에서 만든 bind 함수를 사용하여 연결
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // holder 라는 생성자를 통해 뷰홀더의 객체를 생성하고
         // holder.bind 함수에 위에서 만든 itemList 의 position 번 째 값을 연결
