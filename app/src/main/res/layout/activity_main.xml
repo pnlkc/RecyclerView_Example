@@ -8,11 +8,15 @@
     tools:context=".MainActivity"
     android:padding="20dp">
 
-
+<!-- tools:listitem 과 tools:itemCount 로 미리보기 할 수 있음  -->
+<!-- 아래를 추가해서 레이아웃 매니져를 바로 사용할 수도 있음 -->
+<!-- app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_view"
+        tools:itemCount="3" >
 
 
     </androidx.recyclerview.widget.RecyclerView>
