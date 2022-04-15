@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
 
         // activity_main의 리사이클러뷰 레이아웃 메니져를 리니어레이아웃으로 설정하는 코드
+        // GridLayoutManager는 (context, spanCount, orientation, reverseLayout) 파라미터를 가짐
+        // 예시) GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
         // 위의 레이아웃 매니져 설정을 xml 파일에서
