@@ -1,7 +1,7 @@
 package com.example.examplerecyclerview
 
 object ItemList {
-    val itemList = arrayListOf<ItemData>(
+    val itemList = arrayListOf(
         ItemData("저는 애플이예요!", R.drawable.apple),
         ItemData("저는 크롬이예요!", R.drawable.chrome),
         ItemData("저는 페북이예요!", R.drawable.facebook),
